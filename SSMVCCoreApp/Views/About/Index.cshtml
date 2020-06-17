@@ -1,0 +1,19 @@
+﻿@model IDictionary<string, string>
+
+@{ ViewData["Title"] = "Index"; }
+
+<h1>Key Vault Page</h1>
+<table class="table table-bordered table-responsive table-hover table-striped col-12">
+        <tr>
+            <th>Id</th>
+            <th>Value</th>
+        </tr>
+        @foreach(var item in Model)
+        {
+            <tr>
+                <td>@item.Key</td>
+                <td>@item.Value</td>
+            </tr>
+        }
+</table>
+
